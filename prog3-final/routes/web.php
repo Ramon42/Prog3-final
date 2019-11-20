@@ -11,11 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/perfil/{id?}', ['as'=>'perfil.id', 'uses'=>'UserController@ver($id = null)']);
 
 Route::get('/cadastrar', ['as'=>'user.cadastrar', 'uses'=>'UserController@cadastrar']);
 Route::post('/salvar', ['as'=>'user.salvar', 'uses'=>'UserController@salvar']);
+
+Route::group([
+    'middleware' => 'auth.api'
+    ], function () {
+    Route::get('/', function () {
+        return view('welcome');
+    });
+    Route::get('/perfil/{id?}', ['as'=>'perfil.id', 'uses'=>'UserController@ver($id = null)']);
+});
