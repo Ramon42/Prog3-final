@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRespPrivadasTable extends Migration
+class CreatePreferenciasAsUsers extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,13 @@ class CreateRespPrivadasTable extends Migration
      */
     public function up()
     {
-        Schema::enableForeignKeyConstraints();
-        Schema::create('resp_privadas', function (Blueprint $table) {
+        Schema::create('preferencias_as_users', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('id_user1');
-            $table->unsignedBigInteger('id_user2');
-            $table->string('msgP');
+            $table->unsignedBigInteger('id_user');
+            $table->unsignedBigInteger('id_pref');
+            $table->unsignedBigInteger('id_curso');
+            $table->unsignedBigInteger('id_campus');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
@@ -30,6 +31,6 @@ class CreateRespPrivadasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('resp_privadas');
+        Schema::dropIfExists('preferencias_as_users');
     }
 }

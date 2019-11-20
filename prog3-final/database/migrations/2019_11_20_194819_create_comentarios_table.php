@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePreferenciasAsUsers extends Migration
+class CreateComentariosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,11 @@ class CreatePreferenciasAsUsers extends Migration
      */
     public function up()
     {
-        Schema::enableForeignKeyConstraints();
-        Schema::create('preferencias_as_users', function (Blueprint $table) {
+        Schema::create('comentarios', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('id_user');
-            $table->unsignedBigInteger('id_pref');
-            $table->unsignedBigInteger('id_curso');
-            $table->unsignedBigInteger('id_campus');
+            $table->unsignedBigInteger('id_post');
+            $table->string('comentario');
             $table->softDeletes();
             $table->timestamps();
         });
@@ -32,6 +30,6 @@ class CreatePreferenciasAsUsers extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('preferencias_as_users');
+        Schema::dropIfExists('comentarios');
     }
 }

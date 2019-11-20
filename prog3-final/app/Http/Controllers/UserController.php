@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
+    public function login()
+    {
+
+    }
+
     public function ver($username = null)
     {
         if (is_null($username)) //arrumar para entrar no próprio perfil

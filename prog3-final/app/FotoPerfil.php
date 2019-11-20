@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class FotoPerfil extends Model
 {
+    use SoftDeletes;
     protected $dates = [
         'deleted_at'
     ];
-
 }

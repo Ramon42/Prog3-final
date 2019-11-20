@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateComentariosTable extends Migration
+class CreateRespPrivadasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,11 @@ class CreateComentariosTable extends Migration
      */
     public function up()
     {
-        Schema::enableForeignKeyConstraints();
-        Schema::create('comentarios', function (Blueprint $table) {
+        Schema::create('resp_privadas', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('id_user');
-            $table->unsignedBigInteger('id_post');
-            $table->string('comentario');
-            $table->softDeletes();
+            $table->unsignedBigInteger('id_user1');
+            $table->unsignedBigInteger('id_user2');
+            $table->string('msgP');
             $table->timestamps();
         });
     }
@@ -31,6 +29,6 @@ class CreateComentariosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('comentarios');
+        Schema::dropIfExists('resp_privadas');
     }
 }

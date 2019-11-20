@@ -16,4 +16,11 @@ Route::get('/perfil/{username?}', ['as'=>'perfil.username', 'uses'=>'UserControl
 
 Route::get('/cadastrar', ['as'=>'user.cadastrar', 'uses'=>'UserController@cadastrar']);
 Route::post('/salvar', ['as'=>'user.salvar', 'uses'=>'UserController@salvar']);
+Route::post('/enviar_comentario', ['as' => 'posts.comentar', 'uses'=>'ComentarioController@comentar']);
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+//Route::post('/login/acessar', ['as'=>'auth.login.acessar', 'uses'=>'Auth\LoginController@login']);
 
