@@ -2,9 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="784bc158-5e2d-42e1-8747-698ea3a59f3f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/layout/_includes/footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layout/_includes/header.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layout/nav.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/perfil/user.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_19_000000_create_campus_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_19_000000_create_campuses_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_19_000001_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_19_000001_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_19_000002_create_fotos_perfil_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_19_000002_create_fotos_perfils_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_19_181222_create_combinacoes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_19_181222_create_combinacaos_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_19_181340_create_mensagens_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_19_181340_create_mensagems_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_19_195329_fk_users.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_19_195329_fk_users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_19_195954_fk_fotos_perfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_19_195954_fk_fotos_perfils.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_19_200540_fk_combinacoes.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_19_200540_fk_combinacaos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_19_200804_fk_mensagens.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_19_200804_fk_mensagems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_19_200946_fk_preferencias_as_users.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_19_200946_fk_preferencias_as_users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -131,7 +145,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layout" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -142,6 +156,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Repositórios github\Prog3-final\prog3-final\resources\views\layout" />
+      <recent name="D:\Repositórios github\Prog3-final\prog3-final\resources\views\layout\_includes" />
       <recent name="D:\Repositórios github\Prog3-final\prog3-final" />
     </key>
   </component>
@@ -174,7 +190,8 @@
       <option name="presentableId" value="Default" />
       <updated>1574186768771</updated>
       <workItem from="1574186769934" duration="10232000" />
-      <workItem from="1574201919494" duration="3815000" />
+      <workItem from="1574201919494" duration="4701000" />
+      <workItem from="1574211365335" duration="1927000" />
     </task>
     <servers />
   </component>
@@ -186,7 +203,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

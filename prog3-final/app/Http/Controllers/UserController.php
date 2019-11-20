@@ -6,12 +6,20 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function ver($id = null)
+    public function ver($username = null)
     {
-        if (is_null($id))
+        if (is_null($username))
         {
-
-            return view('perfil.user', compact());
+            $show_user = User::firstOrFail()->where('username', $username);
+            dd($show_user);
+            if (isset($show_user))
+            {
+                return view('perfil.user', compact('show_user'));
+            }
+            else
+            {
+                return view('perfil.user', 'Usuário não encontrado');
+            }
         }
         return (null);
     }

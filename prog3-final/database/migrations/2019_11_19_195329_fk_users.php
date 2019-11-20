@@ -14,7 +14,7 @@ class FkUsers extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->foreign('id_campus')->references('id')->on('campus');
+            $table->foreign('id_campus')->references('id')->on('campuses');
             $table->foreign('id_curso')->references('id')->on('cursos');
         });
     }

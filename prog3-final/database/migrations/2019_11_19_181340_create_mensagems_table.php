@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class FkFotosPerfil extends Migration
+class CreateMensagemsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,11 @@ class FkFotosPerfil extends Migration
      */
     public function up()
     {
-        Schema::table('fotos_perfil', function (Blueprint $table) {
-            $table->foreign('id_user')->references('id')->on('users');
+        Schema::create('mensagems', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->unsignedBigInteger('id_combinacao');
+            $table->string('msg');
+            $table->timestamps();
         });
     }
 
@@ -25,8 +28,6 @@ class FkFotosPerfil extends Migration
      */
     public function down()
     {
-        Schema::table('fotos_perfil', function (Blueprint $table) {
-            $table->dropColumn('id_user');
-        });
+        Schema::dropIfExists('mensagems');
     }
 }

@@ -16,7 +16,7 @@ class FkPreferenciasAsUsers extends Migration
         Schema::table('preferencias_as_users', function (Blueprint $table) {
             $table->foreign('id_user')->references('id')->on('users');
             $table->foreign('id_pref')->references('id')->on('preferencias');
-            $table->foreign('id_campus')->references('id')->on('campus');
+            $table->foreign('id_campus')->references('id')->on('campuses');
             $table->foreign('id_curso')->references('id')->on('cursos');
         });
     }

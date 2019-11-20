@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMensagensTable extends Migration
+class FkMensagems extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,8 @@ class CreateMensagensTable extends Migration
      */
     public function up()
     {
-        Schema::create('mensagens', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->unsignedBigInteger('id_combinacao');
-            $table->string('msg');
-            $table->timestamps();
+        Schema::table('mensagems', function (Blueprint $table) {
+            $table->foreign('id_combinacao')->references('id')->on('combinacaos');
         });
     }
 
@@ -28,6 +25,8 @@ class CreateMensagensTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('mensagens');
+        Schema::table('mensagems', function (Blueprint $table) {
+            $table->dropColumn('id_combinacao');
+        });
     }
 }

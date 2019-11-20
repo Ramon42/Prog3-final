@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCombinacoesTable extends Migration
+class CreateCombinacaosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateCombinacoesTable extends Migration
      */
     public function up()
     {
-        Schema::create('combinacoes', function (Blueprint $table) {
+        Schema::create('combinacaos', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('id_user1');
             $table->unsignedBigInteger('id_user2');
@@ -28,6 +28,6 @@ class CreateCombinacoesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('combinacoes');
+        Schema::dropIfExists('combinacaos');
     }
 }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class FkCombinacoes extends Migration
+class FkCombinacaos extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class FkCombinacoes extends Migration
      */
     public function up()
     {
-        Schema::table('combinacoes', function (Blueprint $table) {
+        Schema::table('combinacaos', function (Blueprint $table) {
             $table->foreign('id_user1')->references('id')->on('users');
             $table->foreign('id_user2')->references('id')->on('users');
         });
@@ -26,7 +26,7 @@ class FkCombinacoes extends Migration
      */
     public function down()
     {
-        Schema::table('combinacoes', function (Blueprint $table) {
+        Schema::table('combinacaos', function (Blueprint $table) {
            $table->dropColumn('id_user1');
            $table->dropColumn('id_user2');
         });

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateFotosPerfilTable extends Migration
+class CreateCampusesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,9 @@ class CreateFotosPerfilTable extends Migration
      */
     public function up()
     {
-        Schema::create('fotos_perfil', function (Blueprint $table) {
+        Schema::create('campuses', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('id_user');
-            $table->string('path');
-            $table->softDeletes();
+            $table->string('campus');
             $table->timestamps();
         });
     }
@@ -29,6 +27,6 @@ class CreateFotosPerfilTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('fotos_perfil');
+        Schema::dropIfExists('campuses');
     }
 }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class FkMensagens extends Migration
+class FkFotosPerfils extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class FkMensagens extends Migration
      */
     public function up()
     {
-        Schema::table('mensagens', function (Blueprint $table) {
-            $table->foreign('id_combinacao')->references('id')->on('combinacoes');
+        Schema::table('fotos_perfils', function (Blueprint $table) {
+            $table->foreign('id_user')->references('id')->on('users');
         });
     }
 
@@ -25,8 +25,8 @@ class FkMensagens extends Migration
      */
     public function down()
     {
-        Schema::table('mensagens', function (Blueprint $table) {
-            $table->dropColumn('id_combinacao');
+        Schema::table('fotos_perfils', function (Blueprint $table) {
+            $table->dropColumn('id_user');
         });
     }
 }
