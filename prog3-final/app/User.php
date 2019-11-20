@@ -11,26 +11,6 @@ class User extends Authenticatable
 {
     use Notifiable;
 
-    public function ver($id = null)
-    {
-        if (is_null($id))
-        {
-
-            return view('perfil.user', compact());
-        }
-        return (null);
-    }
-
-    public function cadastrar()
-    {
-        return view('usuario.cadastrar');
-    }
-
-    public function salvar()
-    {
-
-    }
-
     protected $dates = [
         'deleted_at'
     ];
