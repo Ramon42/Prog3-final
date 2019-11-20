@@ -13,11 +13,9 @@ class UserLoginRequest extends FormRequest
      *
      * @return bool
      */
-    public function authorize($data)
+    public function authorize()
     {
-        $authentic = Auth::attempt(['email'=>$data['email'], 'password'=>$data['password']]);
-
-        return $authentic;
+        return true;
     }
 
     /**

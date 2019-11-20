@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe06b2d3-22b2-49b4-b5e7-0fcb94adf18b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Site/LoginController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UserLoginRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UserUpdateRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/inicial/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/passport/AuthorizedClients.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/passport/Clients.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/passport/PersonalAccessTokens.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/UserLoginRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/UserLoginRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/inicial/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/inicial/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -188,6 +186,8 @@
       <updated>1574278930433</updated>
       <workItem from="1574278931514" duration="1908000" />
       <workItem from="1574280916737" duration="3769000" />
+      <workItem from="1574287766033" duration="640000" />
+      <workItem from="1574288434204" duration="3876000" />
     </task>
     <servers />
   </component>
@@ -199,7 +199,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
