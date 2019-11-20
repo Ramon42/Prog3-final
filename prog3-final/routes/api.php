@@ -17,6 +17,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::get('/home', ['as'=>'postagens', 'uses'=>'PostController@ver_feed']);
 //Route::post('/login/acessar', ['as'=>'auth.login.acessar', 'uses'=>'Auth\LoginController@login']);
 
 Route::group([

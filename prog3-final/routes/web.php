@@ -20,7 +20,8 @@ Route::post('/enviar_comentario', ['as' => 'posts.comentar', 'uses'=>'Comentario
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', ['as'=>'postagens', 'uses'=>'PostController@ver_feed']);
 
-//Route::post('/login/acessar', ['as'=>'auth.login.acessar', 'uses'=>'Auth\LoginController@login']);
+Route::get('/login', ['as'=>'site.login', 'uses'=>'Site\LoginController@index']);
+Route::post('/login/acessar', ['as'=>'site.login.acessar', 'uses'=>'Site\LoginController@login']);
 
