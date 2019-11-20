@@ -11,6 +11,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        // Disable all mass assignment restrictions
+        \App\Post::unguard();
+
+        $this->call(PostsTableSeeder::class);
+
+        // Re enable all mass assignment restrictions
+        \App\Post::reguard();
     }
 }

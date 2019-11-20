@@ -2,22 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="784bc158-5e2d-42e1-8747-698ea3a59f3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/layout/_includes/footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layout/_includes/header.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layout/nav.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/perfil/user.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/CampusFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/CursoFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/PostFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/CampusTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/CursosTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/PostsTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pag_principal.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prog3-final.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prog3-final.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_19_000000_create_campus_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_19_000000_create_campuses_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_19_000001_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_19_000001_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_19_000002_create_fotos_perfil_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_19_000002_create_fotos_perfils_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_19_181222_create_combinacoes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_19_181222_create_combinacaos_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_19_181340_create_mensagens_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_19_181340_create_mensagems_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_19_195329_fk_users.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_19_195329_fk_users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_19_195954_fk_fotos_perfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_19_195954_fk_fotos_perfils.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_19_200540_fk_combinacoes.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_19_200540_fk_combinacaos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_19_200804_fk_mensagens.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_19_200804_fk_mensagems.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_19_200946_fk_preferencias_as_users.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_19_200946_fk_preferencias_as_users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/_includes/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/_includes/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/_includes/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/_includes/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -141,8 +143,11 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1TqTkQuwCcuSrBQuaPMYTETlkxj" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layout" />
@@ -192,6 +197,7 @@
       <workItem from="1574186769934" duration="10232000" />
       <workItem from="1574201919494" duration="4701000" />
       <workItem from="1574211365335" duration="1927000" />
+      <workItem from="1574265747543" duration="3901000" />
     </task>
     <servers />
   </component>
@@ -210,5 +216,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

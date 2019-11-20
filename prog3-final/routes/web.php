@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', ['as'=>'postagens', 'uses'=>'PostController@ver_feed']);
 Route::get('/perfil/{username?}', ['as'=>'perfil.username', 'uses'=>'UserController@ver']);
 
 Route::get('/cadastrar', ['as'=>'user.cadastrar', 'uses'=>'UserController@cadastrar']);
