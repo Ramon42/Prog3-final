@@ -8,6 +8,7 @@
         <input type="email" name="email" id="inputemail" placeholder="E-mail" >
         <input type="password" name="password" id="inputpassword" placeholder="Senha" >
         <input type="button" id="btn" value="Login">
+        <button>Enviar sem Script</button>
     </form>
     <div id = "messages"></div>
     <script>
@@ -26,17 +27,17 @@
                 'Content-Type' : 'application/json',
                 'Accept' : 'application/json'
             });
-            console.log(user);
-            alert("Tentou logar");
+            console.log(JSON.stringify(user));
+            m.innerText = "Tentou logar";
 
-            fetch('http://localhost:8000/api/login/acessar', {
+            fetch('http://localhost:8000/api/login/acessar',{
                 method: 'post',
                 headers : myheaders,
                 body : JSON.stringify(user)
             }).then(function (response){
                 response.json().then(function (data){
-                    console.log(data);
                     m.innerText = data.message;
+                    return data.blob();
                 });
             }).catch(function (error) {
                 console.log('error', error);

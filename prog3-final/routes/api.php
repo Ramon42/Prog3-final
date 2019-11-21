@@ -21,5 +21,7 @@ Route::get('/', ['as'=>'postagens', 'uses'=>'PostController@ver_feed']);
 Route::post('/login/acessar', ['as'=>'auth.login.acessar', 'uses'=>'Auth\LoginController@login']);
 Route::post('/enviar_comentario', ['as' => 'posts.comentar', 'uses'=>'ComentarioController@comentar']);
 
+Route::get('/cadastrar', ['as'=>'site.cadastro', 'uses'=>'Site\RegisterController@index']);
+Route::post('/cadastrar/send', ['as'=>'site.cadastro.send', 'uses'=>'Site\RegisterController@cadastrar']);
 
 

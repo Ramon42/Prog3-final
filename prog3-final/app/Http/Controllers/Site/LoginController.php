@@ -19,13 +19,15 @@ class LoginController extends Controller
 
     public function login(Request $request)
     {
-        //$data = $request->except(['_token']);
         $data = $request->all();
-        if (Auth::attempt(['email'=>$data['email'], 'password'=>$data['password']]))
-        {
-            dd($data);
-            return redirect()->route('postagens');
+        if(Auth::attempt(['email'=>$data['email'], 'password'=>$data['password']])){
+            $accessToken = Auth::user()->createToken('authToken')->accessToken;
+            $authUsr = ['user'=>Auth::user(), 'token'=>$accessToken];
+            return redirect('/home');
         }
-        return redirect()->route('site.login');
+        else
+        {
+            return \redirect('/login');
+        }
     }
 }
