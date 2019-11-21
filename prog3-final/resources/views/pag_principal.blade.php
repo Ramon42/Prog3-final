@@ -3,6 +3,7 @@
 @section('titulo', 'UENP') <!-- troca o valor da variavel titulo para 'Contatos' -->
 
 @section('conteudo')
+    {{ Auth::user()->nome }} <span class="caret"></span>
     <div>
     @foreach($posts as $post)
         <div>
@@ -15,6 +16,10 @@
                 <button>Enviar</button>
             </form>
         </div>
+        <div>
+
+        </div>
     @endforeach
     </div>
+
 @endsection

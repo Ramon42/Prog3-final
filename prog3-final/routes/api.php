@@ -18,10 +18,11 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/', ['as'=>'postagens', 'uses'=>'PostController@ver_feed']);
+Route::get('/login', ['as'=>'site.login', 'uses'=>'Auth\LoginController@index']);
 Route::post('/login/acessar', ['as'=>'auth.login.acessar', 'uses'=>'Auth\LoginController@login']);
 Route::post('/enviar_comentario', ['as' => 'posts.comentar', 'uses'=>'ComentarioController@comentar']);
 
-Route::get('/cadastrar', ['as'=>'site.cadastro', 'uses'=>'Site\RegisterController@index']);
-Route::post('/cadastrar/send', ['as'=>'site.cadastro.send', 'uses'=>'Site\RegisterController@cadastrar']);
+Route::get('/cadastrar', ['as'=>'site.cadastro', 'uses'=>'Auth\RegisterController@index']);
+Route::post('/cadastrar/send', ['as'=>'site.cadastro.send', 'uses'=>'Auth\RegisterController@cadastrar']);
 
 
