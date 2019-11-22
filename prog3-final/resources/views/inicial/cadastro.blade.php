@@ -3,7 +3,7 @@
 @section('titulo', 'UENP') <!-- troca o valor da variavel titulo para 'Contatos' -->
 
 @section('conteudo')
-    <form method="post" action="login/acessar" id="login_form">
+    <form method="post" action="{{ route('register') }}" id="register_form">
         {{ csrf_field() }}
         <input type="text" name="nome" id="inputname" placeholder="Nome" >
         <input type="text" name="username" id="inputusername" placeholder="Nome de usuário" >
@@ -32,7 +32,8 @@
         <input type="email" name="email" id="inputemail" placeholder="E-mail" >
         <input type="password" name="password" id="inputpassword" placeholder="Senha" >
         <input type="checkbox" name="agree", id="ckbxtermos"> Aceito os Termos
-        <input type="button" id="btn" value="Cadastrar">
+        <!--<input type="button" id="btn" value="Cadastrar">-->
+        <button>Cadastrar</button>
     </form>
     <div id = "messages"></div>
     <script>

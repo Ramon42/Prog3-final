@@ -3,7 +3,7 @@
 @section('titulo', 'UENP') <!-- troca o valor da variavel titulo para 'Contatos' -->
 
 @section('conteudo')
-    <form method="post" action="login/acessar" id="login_form">
+    <form method="post" action="{{ route('login') }}" id="login_form">
         {{ csrf_field() }}
         <input type="email" name="email" id="inputemail" placeholder="E-mail" >
         <input type="password" name="password" id="inputpassword" placeholder="Senha" >

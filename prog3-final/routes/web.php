@@ -18,9 +18,9 @@ Route::post('/salvar', ['as'=>'user.salvar', 'uses'=>'UserController@salvar']);
 
 Auth::routes(['verify'=>true]);
 
-Route::get('/login', ['as'=>'auth.login', 'uses'=>'Auth\LoginController@index']);
 Route::post('/login/acessar', ['as'=>'auth.login.acessar', 'uses'=>'Auth\LoginController@login']);
 
+Route::get('/login', ['as'=>'auth.login', 'uses'=>'Auth\LoginController@index']);
 Route::get('/cadastrar', ['as'=>'auth.cadastro', 'uses'=>'Auth\RegisterController@index']);
 Route::post('/cadastrar/send', ['as'=>'site.cadastro.send', 'uses'=>'Auth\RegisterController@cadastrar']);
 
