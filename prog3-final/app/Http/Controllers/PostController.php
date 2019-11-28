@@ -11,6 +11,12 @@ class PostController extends Controller
     public function ver_feed()
     {
         $posts = Post::get();
-        return view('pag_principal', compact('posts'));
+        $data = [];
+        foreach ($posts as $post)
+        {
+            $comentarios = array("id_post"=> $post->id, "comentarios"=>Comentario::where('id_post', $post->id));
+            array_push($data, $comentarios);
+        }
+        return view('pag_principal', compact('posts'), compact('comentarios'));
     }
 }

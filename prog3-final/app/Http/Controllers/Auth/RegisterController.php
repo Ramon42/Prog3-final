@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Campus;
+use App\Curso;
 use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -42,7 +44,13 @@ class RegisterController extends Controller
 
     public function index()
     {
-        return view('inicial.cadastro');
+        $cursos = Curso::all();
+        $campus= Campus::all();
+        $data = [
+            'cursos'=>$cursos,
+            'campus'=>$campus
+        ];
+        return view('inicial.cadastro', compact('campus'), compact('cursos'));
     }
     /**
      * Get a validator for an incoming registration request.

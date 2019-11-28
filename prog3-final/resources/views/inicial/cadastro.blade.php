@@ -13,9 +13,9 @@
             </div>
             <select class="custom-select" id="inputcampus">
                 <option selected>Choose...</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                @foreach($campus as $cp)
+                <option value="{{ $cp->id }}">{{ $cp->campus }}</option>
+                @endforeach
             </select>
         </div>
         <div class="input-group mb-3">
@@ -24,9 +24,9 @@
             </div>
             <select class="custom-select" id="inputcurso">
                 <option selected>Choose...</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                @foreach($cursos as $cr)
+                    <option value="{{ $cr->id }}">{{ $cr->curso }}</option>
+                @endforeach
             </select>
         </div>
         <input type="email" name="email" id="inputemail" placeholder="E-mail" >
