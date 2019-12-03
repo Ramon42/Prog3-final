@@ -2,21 +2,11 @@
 
 namespace App\Http\Requests;
 
-use App\User;
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Support\Facades\Auth;
 
-class UserLoginRequest extends FormRequest
+class UserStoreRequest extends APIRequest
 {
-    /**
-     * Determine if the user is authorized to make this request.
-     *
-     * @return bool
-     */
-    public function authorize()
-    {
-        return true;
-    }
+
 
     /**
      * Get the validation rules that apply to the request.
@@ -31,7 +21,7 @@ class UserLoginRequest extends FormRequest
             'nome' => ['required', 'string', 'max:255'],
             'username'=>['required','unique:users'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'password' => ['required', 'min:8'],
         ];
     }
 }

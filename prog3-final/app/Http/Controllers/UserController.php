@@ -3,10 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use App\Http\Requests\UserLoginRequest;
+use App\Http\Requests\UserStoreRequest;
+use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
+    use SendsPasswordResetEmails;
 
     public function ver($username = null)
     {
@@ -38,6 +42,26 @@ class UserController extends Controller
     {
         return view('usuario.cadastrar');
     }
+
+    public function register(UserStoreRequest $request)
+    {
+        $data = $request->validated();
+        $data['password'] = bcrypt($data['password']);
+        $user = User::create($data);
+        if ($user) {
+            return redirect('/home');
+        }
+    }
+    public function logout()
+    {
+        $user = Auth::user();
+        $userTokens = $user->tokens;
+        foreach($userTokens as $token) {
+            $token->revoke();
+        }
+        return  $this->sendMessage("Logout realizado com sucesso");
+    }
+
 
     public function salvar()
     {

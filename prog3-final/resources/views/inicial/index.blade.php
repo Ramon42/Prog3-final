@@ -7,14 +7,14 @@
         {{ csrf_field() }}
         <input type="email" name="email" id="inputemail" placeholder="E-mail" >
         <input type="password" name="password" id="inputpassword" placeholder="Senha" >
-        <input type="button" id="btn" value="Login">
+        <input type="button" id="btnlogin" value="Login">
         <button>Enviar sem Script</button>
     </form>
     <div id = "messages"></div>
     <script>
         var email = document.getElementById('inputemail');
         var password = document.getElementById('inputpassword');
-        var b = document.getElementById('btn');
+        var b = document.getElementById('btnlogin');
         var m = document.getElementById('messages');
 
         b.addEventListener('click', function (){

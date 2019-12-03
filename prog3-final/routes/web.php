@@ -22,7 +22,7 @@ Route::post('/login/acessar', ['as'=>'auth.login.acessar', 'uses'=>'Auth\LoginCo
 
 Route::get('/login', ['as'=>'auth.login', 'uses'=>'Auth\LoginController@index']);
 Route::get('/cadastrar', ['as'=>'auth.cadastro', 'uses'=>'Auth\RegisterController@index']);
-Route::post('/cadastrar/send', ['as'=>'site.cadastro.send', 'uses'=>'Auth\RegisterController@cadastrar']);
+Route::post('/cadastrar/send', ['as'=>'site.cadastro.send', 'uses'=>'UserController@register']);
 
 Route::get('/home', ['as'=>'postagens', 'uses'=>'PostController@ver_feed']);
 Route::post('/enviar_comentario', ['as' => 'posts.comentar', 'uses'=>'ComentarioController@comentar']);
