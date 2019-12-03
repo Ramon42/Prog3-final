@@ -2,15 +2,35 @@
 
 namespace App\Http\Controllers;
 
+use App\Campus;
+use App\Curso;
 use App\User;
 use App\Http\Requests\UserLoginRequest;
 use App\Http\Requests\UserStoreRequest;
 use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
     use SendsPasswordResetEmails;
+
+    public function index()
+    {
+        return view('inicial.index');
+    }
+
+    public function login(UserLoginRequest $request)
+    {
+        $data = $request->validated();
+        if (!Auth::attempt($data))
+        {
+            return redirect('/login');
+        }
+        $user = Auth::user();
+        $user->accessToken = $user->createToken('authToken')->accessToken;
+        return redirect('/');
+    }
 
     public function ver($username = null)
     {
@@ -40,7 +60,13 @@ class UserController extends Controller
 
     public function cadastrar()
     {
-        return view('usuario.cadastrar');
+        $cursos = Curso::all();
+        $campus= Campus::all();
+        $data = [
+            'cursos'=>$cursos,
+            'campus'=>$campus
+        ];
+        return view('inicial.cadastro', compact('campus'), compact('cursos'));
     }
 
     public function register(UserStoreRequest $request)
@@ -49,7 +75,7 @@ class UserController extends Controller
         $data['password'] = bcrypt($data['password']);
         $user = User::create($data);
         if ($user) {
-            return redirect('/home');
+            return redirect('/login');
         }
     }
     public function logout()

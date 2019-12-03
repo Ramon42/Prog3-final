@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe06b2d3-22b2-49b4-b5e7-0fcb94adf18b" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="fe06b2d3-22b2-49b4-b5e7-0fcb94adf18b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PreferenciasController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/prefs/add_preferencias.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/prefs/ver_preferencias.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/perfil/preferencias.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prog3-final.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prog3-final.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/UserLoginRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/UserLoginRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/inicial/cadastro.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/inicial/cadastro.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/inicial/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/inicial/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pag_principal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pag_principal.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,6 +141,11 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -142,31 +160,32 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ramon\OneDrive\Área de Trabalho\prog3-final\prog3-final\database\migrations" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ramon\OneDrive\Área de Trabalho\prog3-final\prog3-final\resources\views" />
       <recent name="C:\Users\ramon\OneDrive\Área de Trabalho\prog3-final\prog3-final\app\Http\Controllers" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ramon\OneDrive\Área de Trabalho\Prog3 final\prog3-final\resources\views\admin\prefs" />
+      <recent name="C:\Users\ramon\OneDrive\Área de Trabalho\prog3-final\prog3-final\database\migrations" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -190,6 +209,9 @@
       <workItem from="1574900921729" duration="2440000" />
       <workItem from="1575327550643" duration="3614000" />
       <workItem from="1575331303255" duration="252000" />
+      <workItem from="1575356005048" duration="4580000" />
+      <workItem from="1575361173918" duration="16000" />
+      <workItem from="1575361207726" duration="1120000" />
     </task>
     <servers />
   </component>
@@ -211,5 +233,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="640" y="247" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575361178484">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="247" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/1920.104.1600.860@0.0.1920.1040" timestamp="1575361178484" />
+    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1575361722757">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.104.1600.860@0.0.1920.1040" timestamp="1575361722757" />
   </component>
 </project>

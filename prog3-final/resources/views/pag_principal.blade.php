@@ -18,7 +18,7 @@
             </form>
         </div>
         <div>
-        @foreach($comentario as $comentarios)
+        @foreach($comentarios as $comentario)
             @if($comentario['id_post'] == $post->id)
                 {{ $comentario['comentarios']->comentario }}
                 @endif

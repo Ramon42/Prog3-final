@@ -26,12 +26,8 @@ class UserLoginRequest extends FormRequest
     public function rules()
     {
         return [
-            'id_campus'=> ['required'],
-            'id_curso'=> ['required'],
-            'nome' => ['required', 'string', 'max:255'],
-            'username'=>['required','unique:users'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'email' => 'email|required',
+            'password' => 'required'
         ];
     }
 }
