@@ -1,13 +1,13 @@
-<div class="row">
+<div class="row bg-dark">
     <div class="col-2">
-        <button type="button" class="btn btn-dark">{{ Auth::user()->nome }}</button>
+        <button type="button" class="btn btn-dark">Nome user</button>
     </div>
     <div class="col-8">
 
     </div>
     <div class="dropdown col-2">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Botão dropdown
+            <i class="fas fa-cog"></i>
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" href="#">Configurações</a>

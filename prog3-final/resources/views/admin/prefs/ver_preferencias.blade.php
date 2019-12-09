@@ -5,7 +5,7 @@
 @section('conteudo')
     <div class="row">
         <div class="col-sm"></div>
-        <div class="col-sm form-group" action="{{  }}">
+        <div class="col-sm form-group" >
             <form>
 
             </form>
