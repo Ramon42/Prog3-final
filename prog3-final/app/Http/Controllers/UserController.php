@@ -27,6 +27,7 @@ class UserController extends Controller
         $data = $request->validated();
         if (!Auth::attempt($data))
         {
+            dd(Auth::attempt($data));
             return redirect('/login');
         }
         $user = Auth::user();
