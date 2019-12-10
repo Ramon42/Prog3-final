@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe06b2d3-22b2-49b4-b5e7-0fcb94adf18b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/inicial/cadastro.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/inicial/cadastro.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/inicial/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/inicial/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prog3-final.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prog3-final.iml" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -161,23 +159,23 @@
       <recent name="C:\Users\ramon\OneDrive\Área de Trabalho\prog3-final\prog3-final\app\Http\Controllers" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -208,6 +206,7 @@
       <workItem from="1575853882412" duration="16311000" />
       <workItem from="1575942923100" duration="18386000" />
       <workItem from="1575966284936" duration="1898000" />
+      <workItem from="1575968250105" duration="170000" />
     </task>
     <servers />
   </component>
