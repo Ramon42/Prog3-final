@@ -6,6 +6,7 @@
 @section('conteudo')
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <div class="container-fluid">
         <div class="row">
             <div class="col-3"></div>
@@ -91,10 +92,32 @@
                 @endif
             @endforeach
 >>>>>>> parent of 1803a46... novas páginas
+=======
+    {{ Auth::user()->nome }} <span class="caret"></span>
+    <div>
+    @foreach($posts as $post)
+        <div>
+            <p>{{ $post->id_user }}</p> <!-- ->nome para acessar objeto, contato['nome'] para acessar lista n objetos -->
+            <p>{{ $post->conteudo }}</p>
+            <form method="post" action="/enviar_comentario">
+                {{ csrf_field() }}
+                <input type="hidden" name="id_post" value="{{ $post->id }}">
+                <input type="text" name="comentario" placeholder="Comentar" >
+                <button>Enviar</button>
+            </form>
+        </div>
+        <div>
+        @foreach($comentarios as $comentario)
+            @if($comentario['id_post'] == $post->id)
+                {{ $comentario['comentarios']->comentario }}
+                @endif
+            @endforeach
+>>>>>>> parent of 1803a46... novas páginas
         </div>
     @endforeach
     </div>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     <div class="row">
         <div id = "messages"></div>
@@ -159,5 +182,7 @@
     @endforeach
     </div>
 
+>>>>>>> parent of 1803a46... novas páginas
+=======
 >>>>>>> parent of 1803a46... novas páginas
 @endsection

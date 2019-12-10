@@ -10,9 +10,12 @@ use App\Post;
 use Illuminate\Http\Request;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
+=======
+>>>>>>> parent of 1803a46... novas páginas
 =======
 >>>>>>> parent of 1803a46... novas páginas
 =======
@@ -30,6 +33,7 @@ class PostController extends Controller
 
     public function ver_feed()
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         /*
@@ -70,6 +74,10 @@ class PostController extends Controller
         $posts = Post::get();
         $data = [];
 >>>>>>> parent of 1803a46... novas páginas
+=======
+        $posts = Post::get();
+        $data = [];
+>>>>>>> parent of 1803a46... novas páginas
         foreach ($posts as $post)
         {
             $comentarios = array("id_post"=> $post->id, "comentarios"=>Comentario::where('id_post', $post->id));
@@ -77,9 +85,12 @@ class PostController extends Controller
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 */
         return view('pag_principal', compact('posts', 'comentarios', 'combinacoes'));
 =======
+=======
+>>>>>>> parent of 1803a46... novas páginas
 =======
 >>>>>>> parent of 1803a46... novas páginas
         return view('pag_principal', compact('posts'), compact('comentarios'));

@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="fe06b2d3-22b2-49b4-b5e7-0fcb94adf18b" name="Default Changelist" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 1803a46... novas páginas
       <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PreferenciasController.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/resources/views/admin/prefs/add_preferencias.blade.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/resources/views/admin/prefs/ver_preferencias.blade.php" afterDir="false" />
@@ -217,6 +220,7 @@
       <workItem from="1575361173918" duration="16000" />
       <workItem from="1575361207726" duration="1120000" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1575665869985" duration="4529000" />
       <workItem from="1575853882412" duration="16311000" />
       <workItem from="1575942923100" duration="18386000" />
@@ -226,6 +230,8 @@
       <workItem from="1576015400171" duration="338000" />
       <workItem from="1576015921544" duration="42000" />
       <workItem from="1576016036210" duration="46000" />
+=======
+>>>>>>> parent of 1803a46... novas páginas
 =======
 >>>>>>> parent of 1803a46... novas páginas
     </task>
@@ -258,6 +264,7 @@
     <state x="714" y="50" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1575964151868">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+<<<<<<< HEAD
     <state x="714" y="50" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.104.1600.860@0.0.1920.1040" timestamp="1575964151868" />
     <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1575956504093">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -280,6 +287,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.104.1600.860@0.0.1920.1040" timestamp="1575946713769" />
+=======
+    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.104.1600.860@0.0.1920.1040" timestamp="1575361722757" />
+>>>>>>> parent of 1803a46... novas páginas
 =======
     <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.104.1600.860@0.0.1920.1040" timestamp="1575361722757" />
 >>>>>>> parent of 1803a46... novas páginas
