@@ -12,6 +12,7 @@
       <change afterPath="$PROJECT_DIR$/resources/views/admin/prefs/ver_preferencias.blade.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/resources/views/perfil/preferencias.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/prog3-final.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prog3-final.iml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Requests/UserLoginRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/UserLoginRequest.php" afterDir="false" />
@@ -21,7 +22,10 @@
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
 >>>>>>> parent of 1803a46... novas páginas
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+=======
+>>>>>>> parent of b9fcdc2... update_msg (pré-revert)
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -176,23 +180,23 @@
       <recent name="C:\Users\ramon\OneDrive\Área de Trabalho\prog3-final\prog3-final\app\Http\Controllers" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -226,6 +230,7 @@
       <workItem from="1575942923100" duration="18386000" />
       <workItem from="1575966284936" duration="1898000" />
       <workItem from="1575968250105" duration="170000" />
+<<<<<<< HEAD
       <workItem from="1575968474687" duration="338000" />
       <workItem from="1576015400171" duration="338000" />
       <workItem from="1576015921544" duration="42000" />
@@ -234,6 +239,8 @@
 >>>>>>> parent of 1803a46... novas páginas
 =======
 >>>>>>> parent of 1803a46... novas páginas
+=======
+>>>>>>> parent of b9fcdc2... update_msg (pré-revert)
     </task>
     <servers />
   </component>
