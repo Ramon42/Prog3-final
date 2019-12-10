@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="fe06b2d3-22b2-49b4-b5e7-0fcb94adf18b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/prog3-final.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prog3-final.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_20_194515_create_mensagems_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_20_194515_create_mensagems_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_20_200804_fk_mensagems.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_20_200804_fk_mensagems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_10_073445_update_mensagems_sent_by.php" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -159,23 +161,23 @@
       <recent name="C:\Users\ramon\OneDrive\Área de Trabalho\prog3-final\prog3-final\app\Http\Controllers" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -207,6 +209,7 @@
       <workItem from="1575942923100" duration="18386000" />
       <workItem from="1575966284936" duration="1898000" />
       <workItem from="1575968250105" duration="170000" />
+      <workItem from="1575968474687" duration="338000" />
     </task>
     <servers />
   </component>
