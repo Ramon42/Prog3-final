@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -34,6 +35,11 @@
             </li>
         </ul>
 
+=======
+<div class="row">
+    <div class="col-2">
+        <button type="button" class="btn btn-dark">{{ Auth::user()->nome }}</button>
+>>>>>>> parent of 1803a46... novas páginas
 =======
 <div class="row">
     <div class="col-2">
