@@ -26,6 +26,7 @@ Route::post('/enviar_comentario', ['as' => 'posts.comentar', 'uses'=>'Comentario
 Route::get('/cadastrar', ['as'=>'site.cadastro', 'uses'=>'UserController@cadastrar']);
 Route::post('/cadastrar/send', ['as'=>'site.cadastro.send', 'uses'=>'UserController@register']);
 
+Route::post('/publicar', ['as'=> 'newpost', 'uses'=>'PostController@nova_postagem']);
 
 //ROTAS DE ADMS
 Route::get('/adm/preferencias', ['as' => 'adm.pref', 'uses' => 'PreferenciasController@index']);

@@ -20,7 +20,7 @@
                 <input type="password" name="password" class="form-control" id="inputpasswordlogin" placeholder="Senha" >
                 <div class="input-group mb-3"></div>
                 <input type="button" id="btnlogin" class="btn btn-dark" value="Logar">
-                <button>Enviar sem Script</button>
+                <button type="button" class="btn btn-dark">Login</button>
             </form>
         </div>
         <div class="col-sm"></div>

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class FkMensagems extends Migration
+class UpdateMensagemsSentBy extends Migration
 {
     /**
      * Run the migrations.
@@ -14,8 +14,7 @@ class FkMensagems extends Migration
     public function up()
     {
         Schema::table('mensagems', function (Blueprint $table) {
-            $table->integer('sent_by')
-            ->after('id');
+            $table->foreign('id_combinacao')->references('id')->on('combinacaos');
         });
     }
 
@@ -27,7 +26,7 @@ class FkMensagems extends Migration
     public function down()
     {
         Schema::table('mensagems', function (Blueprint $table) {
-            $table->dropColumn('sent_by');
+            $table->dropColumn('id_combinacao');
         });
     }
 }

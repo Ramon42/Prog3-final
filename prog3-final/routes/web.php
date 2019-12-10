@@ -20,6 +20,7 @@ Auth::routes(['verify'=>true]);
 
 Route::get('/login', ['as'=>'site.login', 'uses'=>'UserController@index']);
 Route::post('/login/acessar', ['as'=>'site.login.acessar', 'uses'=>'UserController@login']);
+Route::get('/logout', ['as'=>'logout', 'uses'=>'UserController@logout']);
 
 Route::get('/cadastrar', ['as'=>'auth.cadastro', 'uses'=>'UserController@cadastrar']);
 Route::post('/cadastrar/send', ['as'=>'site.cadastro.send', 'uses'=>'UserController@register']);
@@ -28,6 +29,9 @@ Route::post('/enviar_comentario', ['as' => 'posts.comentar', 'uses'=>'Comentario
 Route::get('/perfil/{username?}', ['as'=>'perfil.username', 'uses'=>'UserController@ver'])->middleware('verified');
 
 Route::get('/sugestoes', ['as'=>'sugestoes', 'uses'=>"PreferenciasController@find_matching"]);
+Route::post('/publicar', ['as'=> 'newpost', 'uses'=>'PostController@nova_postagem']);
+
+Route::get('/chat/{id}', ['as'=>'chat', 'uses'=>'MensagemController@index']);
 
 //ROTAS DE ADMS
 Route::get('/adm/preferencias', ['as' => 'adm.pref', 'uses' => 'PreferenciasController@index']);

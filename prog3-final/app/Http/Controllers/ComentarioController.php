@@ -15,7 +15,7 @@ class ComentarioController extends Controller
         $data = $request->all();
         $data['id_user'] = Auth::id();
         Comentario::create($data);
-        return Redirect::to('/home');
+        return Redirect::to('/');
     }
 
     public function getComentario(int $id)

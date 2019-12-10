@@ -7,9 +7,11 @@ use App\Curso;
 use App\User;
 use App\Http\Requests\UserLoginRequest;
 use App\Http\Requests\UserStoreRequest;
+use Defuse\Crypto\File;
 use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 class UserController extends Controller
 {
@@ -71,10 +73,12 @@ class UserController extends Controller
 
     public function register(UserStoreRequest $request)
     {
+        echo 'ENTROU';
         $data = $request->validated();
         $data['password'] = bcrypt($data['password']);
         $user = User::create($data);
         if ($user) {
+            Storage::disk('local')->makeDirectory($data['username']);
             return redirect('/login');
         }
     }
@@ -85,7 +89,6 @@ class UserController extends Controller
         foreach($userTokens as $token) {
             $token->revoke();
         }
-        return  $this->sendMessage("Logout realizado com sucesso");
     }
 
 
