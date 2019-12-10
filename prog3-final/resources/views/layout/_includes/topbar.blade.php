@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -36,8 +37,11 @@
 
 <!--
 <nav class="navbar navbar-dark bg-dark navbar-expand-lg sticky-top container">
+=======
+<div class="row">
+>>>>>>> parent of 1803a46... novas páginas
     <div class="col-2">
-        <button type="button" class="btn btn-dark">Nome user</button>
+        <button type="button" class="btn btn-dark">{{ Auth::user()->nome }}</button>
     </div>
     <div class="col-2"></div>
     <div class="col-4">
@@ -51,7 +55,7 @@
     <div class="col-2"></div>
     <div class="dropdown col-2">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-cog"></i>
+            Botão dropdown
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" href="#">Configurações</a>

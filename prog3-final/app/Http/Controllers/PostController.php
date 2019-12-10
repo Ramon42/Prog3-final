@@ -8,9 +8,12 @@ use App\Http\Requests\NewPostRequest;
 use App\Mensagem;
 use App\Post;
 use Illuminate\Http\Request;
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
+=======
+>>>>>>> parent of 1803a46... novas páginas
 
 class PostController extends Controller
 {
@@ -24,6 +27,7 @@ class PostController extends Controller
 
     public function ver_feed()
     {
+<<<<<<< HEAD
         /*
         $posts = DB::table('posts')
             ->join('users', 'id_user', '=', 'users.id')
@@ -54,22 +58,20 @@ class PostController extends Controller
         }
 
 /*
+=======
+        $posts = Post::get();
+        $data = [];
+>>>>>>> parent of 1803a46... novas páginas
         foreach ($posts as $post)
         {
-            foreach ($comentarios as $coment)
-            {
-                if ($post['id'] == $coment['id_post'])
-                {
-                    $comentarios = array(
-                        "id_user" => $coment['id_user'],
-                        "id_post" => $coment['id_post'],
-                        "comentario" => $coment['comentario']);
-                    array_push($data, $comentarios);
-                }
-            }
-
+            $comentarios = array("id_post"=> $post->id, "comentarios"=>Comentario::where('id_post', $post->id));
+            array_push($data, $comentarios);
         }
+<<<<<<< HEAD
 */
         return view('pag_principal', compact('posts', 'comentarios', 'combinacoes'));
+=======
+        return view('pag_principal', compact('posts'), compact('comentarios'));
+>>>>>>> parent of 1803a46... novas páginas
     }
 }
