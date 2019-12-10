@@ -28,14 +28,12 @@ Route::post('/cadastrar/send', ['as'=>'site.cadastro.send', 'uses'=>'UserControl
 Route::post('/enviar_comentario', ['as' => 'posts.comentar', 'uses'=>'ComentarioController@comentar']);
 Route::get('/perfil/{username?}', ['as'=>'perfil.username', 'uses'=>'UserController@ver'])->middleware('verified');
 
-<<<<<<< HEAD
+
 Route::get('/sugestoes', ['as'=>'sugestoes', 'uses'=>"PreferenciasController@find_matching"]);
 Route::post('/publicar', ['as'=> 'newpost', 'uses'=>'PostController@nova_postagem']);
 
 Route::get('/chat/{id}', ['as'=>'chat', 'uses'=>'MensagemController@index']);
-=======
 
->>>>>>> parent of 1803a46... novas páginas
 
 //ROTAS DE ADMS
 Route::get('/adm/preferencias', ['as' => 'adm.pref', 'uses' => 'PreferenciasController@index']);
