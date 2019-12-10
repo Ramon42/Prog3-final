@@ -2,6 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe06b2d3-22b2-49b4-b5e7-0fcb94adf18b" name="Default Changelist" comment="">
+<<<<<<< HEAD
+=======
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PreferenciasController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/prefs/add_preferencias.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/prefs/ver_preferencias.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/perfil/preferencias.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prog3-final.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prog3-final.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/UserLoginRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/UserLoginRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/inicial/cadastro.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/inicial/cadastro.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/inicial/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/inicial/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pag_principal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pag_principal.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+>>>>>>> parent of 1803a46... novas páginas
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -201,6 +216,7 @@
       <workItem from="1575356005048" duration="4580000" />
       <workItem from="1575361173918" duration="16000" />
       <workItem from="1575361207726" duration="1120000" />
+<<<<<<< HEAD
       <workItem from="1575665869985" duration="4529000" />
       <workItem from="1575853882412" duration="16311000" />
       <workItem from="1575942923100" duration="18386000" />
@@ -210,6 +226,8 @@
       <workItem from="1576015400171" duration="338000" />
       <workItem from="1576015921544" duration="42000" />
       <workItem from="1576016036210" duration="46000" />
+=======
+>>>>>>> parent of 1803a46... novas páginas
     </task>
     <servers />
   </component>
@@ -244,6 +262,7 @@
     <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1575956504093">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+<<<<<<< HEAD
     <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.104.1600.860@0.0.1920.1040" timestamp="1575956504093" />
     <state x="644" y="174" width="645" height="691" key="#phpunit.xml" timestamp="1575859239369">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -261,5 +280,8 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.104.1600.860@0.0.1920.1040" timestamp="1575946713769" />
+=======
+    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.104.1600.860@0.0.1920.1040" timestamp="1575361722757" />
+>>>>>>> parent of 1803a46... novas páginas
   </component>
 </project>
