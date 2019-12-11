@@ -19,7 +19,7 @@ class UserController extends Controller
 
     public function index()
     {
-        return view('inicial.index');
+        return view('auth.login');
     }
 
     public function login(UserLoginRequest $request)
@@ -90,6 +90,7 @@ class UserController extends Controller
         foreach($userTokens as $token) {
             $token->revoke();
         }
+        return view('site.login');
     }
 
 

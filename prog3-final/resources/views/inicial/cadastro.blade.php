@@ -53,7 +53,7 @@
             <input type="password" name="password" class="form-control" id="inputpassword" placeholder="Senha" >
             <input type="checkbox" name="agree" id="ckbxtermos"> Aceito os Termos
             <div class="input-group mb-3"></div>
-            <input type="button" id="btncadastro" class="btn btn-dark" value="Cadastrar script">
+            <!--<input type="button" id="btncadastro" class="btn btn-dark" value="Cadastrar script">-->
             <button type="submit" class="btn btn-dark">Cadastrar</button>
         </form>
         <div id='messages' style="border: thin black solid; "></div>
